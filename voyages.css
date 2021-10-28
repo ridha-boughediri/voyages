@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "DMSans-Bold";
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 12%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    /* padding: 0% 5%; */
+}
+
+.block-logo {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 30%;
+    height: 100%;
+}
+
+.block-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.block-logo a img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+    transform: scale(1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.block-logo a img:hover {
+    transform: scale(1.05, 1.05) translateZ(0px) translate3d(0px, 0px, 0px);
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+}
+
+nav {
+    width: 70%;
+    height: 100%;
+}
+
+.menu ol {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+
+.dropbtn {
+    background-color: transparent;
+    padding: 10px;
+    font-size: 14px;
+    font-family: "DMSans-Bold";
+    height: 100%;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.dropbtn a {
+    text-decoration: none;
+}
+
+.dropdown {
+    display: flex;
+    height: 100%;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 12%;
+    background-color: white;
+    border-top: grey 3px solid;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: rgb(202, 202, 202);
+    transform: scale(1.05, 1.05) translateZ(0px) translate3d(0px, 0px, 0px);
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+}
+
+.dropdown:hover .dropbtn a {
+    color: rgb(202, 202, 202);
+}
+
+@font-face {
+    font-family: "DMSans-Bold";
+    src: url("../font/DMSans-Bold.ttf");
+}
+
+/* CARROUSEL */
+
+
+.gallery {
+    /* background: #EEE; */
+    height: 100%;
+}
+
+.gallery-cell {
+    width: 66%;
+    height: 100%;
+    margin-right: 10px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.gallery-cell a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.gallery-cell a h2 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+}
+
+.gallery-cell:hover a h2 {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+.gallery-cell:nth-of-type(1) {
+    background-image: url(../img/berlin.jpg);
+}
+
+.gallery-cell:nth-of-type(2) {
+    background-image: url(../img/tokyo.jpg);
+}
+
+.gallery-cell:nth-of-type(3) {
+    background-image: url(../img/los-angeles.jpg);
+}
+
+.gallery-cell:nth-of-type(4) {
+    background-image: url(../img/alger.jpg);
+}
+
+.gallery-cell:nth-of-type(5) {
+    background-image: url(../img/paris.jpg);
+}
+
+.flickity-viewport {
+    height: 100% !important;
+}
+
+.flickity-page-dots {
+    bottom: 0px !important;;
+}
+
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+}
+
+.flickity-page-dots .dot.is-selected {
+    background: white;
+}
+
+.flickity-button {
+    background: rgba(255, 255, 255, 0) !important;
+}
+
+.flickity-button svg{
+    color: white;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+    height: max-content;
+}
+
+.title-content {
+    width: 100%;
+    height: 380px;
+}
+
+.title-content.scroll {
+    height: 100px;
+    transition: height 250ms ease-in-out 0s, margin-top 350ms ease-in-out 0s;
+}
+
+.block-card {
+    background-image: url("../img/back.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: max-content;
+}
+
+.content-card {
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 235, 205, 0.541);
+    border-radius: 25px;
+    margin: 5%;
+    transform: scale(1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.card:hover {
+    transform: scale(1.05, 1.05) translateZ(0px) translate3d(0px, 0px, 0px);
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+}
+
+.card-a {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+
+.content-img {
+    width: 100%;
+    height: 70%;
+}
+
+.content-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.content-text {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.text-ville {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-text img {
+    width: 40px;
+    height: 40px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+footer a {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    transform: scale(1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+footer a:hover {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    transform: scale(1.05, 1.05) translateZ(0px) translate3d(0px, 0px, 0px);
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+}

@@ -1,0 +1,290 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* header */
+header {
+    width: 100%;
+    height: 12%;
+    background-color: rgba(190, 74, 74, 0.5);
+    display: flex;
+    align-items: center;
+    /* padding: 0% 5%; */
+}
+
+.block-logo {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 30%;
+    height: 100%;
+}
+
+.block-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.block-logo a img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+    transform: scale(1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.block-logo a img:hover {
+    transform: scale(1.05, 1.05) translateZ(0px) translate3d(0px, 0px, 0px);
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+}
+
+nav {
+    width: 70%;
+    height: 100%;
+}
+
+.menu ol {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+
+.dropbtn {
+    background-color: transparent;
+    padding: 10px;
+    font-size: 14px;
+    font-family:"lemon"; 
+    height: 100%;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.dropbtn a {
+    text-decoration: none;
+}
+
+.dropdown {
+    display: flex;
+    height: 100%;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 12%;
+    background-color: white;
+    border-top: grey 3px solid;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: rgb(202, 202, 202);
+    transform: scale(1.05, 1.05) translateZ(0px) translate3d(0px, 0px, 0px);
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+}
+
+.dropdown:hover .dropbtn a {
+    color: rgb(202, 202, 202);
+}
+
+
+/* fin header */
+
+
+/* accueil */
+.contener-accueil{
+    display: flex;
+    justify-content: center;
+}
+.titre-page{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.imgA{
+    width: 90%;
+    height: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right:0%;
+    box-shadow: 0px 0px 30px rgb(30,30,30,100);
+    border-radius: 2%;
+}
+
+/* monument */
+.contener{
+    padding: 10px;
+    margin: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.image{
+    text-align: center;
+}
+.imgM{
+    height: 15%;
+    width: 20%;
+    box-shadow: 0px 0px 30px rgb(30,30,30,100);
+    border-radius: 5%;
+}
+
+/* capital */
+
+.capital{
+    display: flex;
+    
+}
+
+.contener-cap{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-right: 20%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-size: 150%;
+   width: auto ;
+   height: 75%;
+}
+
+.imgC{
+    margin-right: 20px;
+    border-radius: 2%;
+}
+
+.titre-capital{
+    text-align: center;
+    font-family: "champagne";
+    background-color: whitesmoke;
+
+}
+
+.titre-eng{
+    text-align: center;
+    font-family: "lemon";
+}
+
+
+/* tableau */
+
+.tableau{
+    border:black solid;
+    background-color: white;
+}
+
+.imgS{
+    width: 35%;
+    height: 20%;
+    border: 2px black;
+
+}
+
+.contener-tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 30px rgb(30,30,30,100);
+    padding-top: 2%;
+    margin-left: 13%;
+    margin-right: 13%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+    background: white;
+    border-radius: 2%;
+}
+
+/* nourriture */
+
+.contener-nourriture{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+
+.paragraph-eng, .paragraph, .titre-food{
+    text-align: center;
+    font-family: "champagne";
+    background-color: whitesmoke;
+}
+
+
+.london{
+    font-family: "champagne";
+}
+
+
+@font-face {
+    font-family:"lemon" ;
+    src: url(../font/lemon_milk/LEMONMILK-Regular.otf);
+}
+
+@font-face {
+    font-family: "champagne";
+    src: url(../font/champagne_limousines/Champagne\ &\ Limousines.ttf);
+}
+
+.foot-eng{
+    background-color: rgba(128, 128, 128, 0.568);
+    font-family: "champagne";
+    padding-bottom: 1%;
+    padding-top: 1%;
+    text-align: center;
+    border: solid black
+}
+
+
+
